@@ -6,7 +6,7 @@ This is the Dockerfile setup for [plexEmail](https://github.com/jakewaldron/Plex
 To build the image locally:
 
 ```bash
-git clone https://github.com/blackbarn/docker-plexemail.git;
+git clone https://github.com/nixon506e/docker-plexemail.git;
 cd docker-plexemail;
 docker build -t plex-email .
 ```
@@ -17,7 +17,7 @@ docker build -t plex-email .
 docker run -d -v /your_config_location:/config -v /your_plex_folder:/plex -p 80:80 --name plexEmail plex-email
 ```
 
-Or you can replace `plex-email` with `blackbarn/plex-email` in your `run` command to use the pre-built image from docker hub.
+Or you can replace `plex-email` with `nixon506e/plex-email` in your `run` command to use the pre-built image from docker hub.
 
 ```bash
 docker run -d -v /your_config_location:/config -v /your_plex_folder:/plex -p 80:80 --name plexEmail blackbarn/plex-email
