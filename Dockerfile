@@ -1,16 +1,16 @@
 FROM nginx
 
-MAINTAINER blackbarn@gmail.com
+MAINTAINER nixon506e@gmail.com
 
 # Use bash instead of sh
 RUN rm -rf /bin/sh && ln -s /bin/bash /bin/sh
 
 # Install dependencies
 RUN apt-get -q update && \
-    apt-get install -qy --force-yes cron python-pip build-essential python-dev libffi-dev libssl-dev git
+    apt-get install -qy --force-yes cron python-pip python-requests build-essential python-dev libffi-dev libssl-dev git
 
 # Clone PlexEmail
-RUN git clone https://github.com/jakewaldron/PlexEmail.git /PlexEmail
+RUN git clone https://github.com/Nixon506E/PlexEmail.git /PlexEmail
 
 # Cleanup
 RUN apt-get autoremove &&\

@@ -27,7 +27,7 @@ Change the port mapping to suit your needs, for example to have the web listen o
 
 ## Configuration
 
-On first start up, it will create a default `config.conf` for `plexEmail` within `your_config_location`. 
+On first start up, it will create a default `config.conf` for `plexEmail` within `your_config_location`.
 After this, set the following properties to configure plex and nginx:
 
 ```bash
@@ -38,7 +38,7 @@ web_folder = '/PlexEmail/web'
 Be sure to modify the rest of this file to suit your needs.
 
 ## Cron
-Plex Email's script is triggered by a cron job. There is a default one that this will use and it will trigger every Sunday at 11PM.
+Plex Email's script is triggered by a cron job. There is a default one that this will use and it will trigger every Monday at 3AM.
 
 If you wish to define your own, simply place a file called `crontab` in your config directory. Be sure to ensure you have a blank line at the end otherwise it is not a true cron file :)
 
